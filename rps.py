@@ -17,22 +17,25 @@ match user_action:
         match computer_action:
             case "scissors":
                 print("Rock smashes scissors! You win!")
-            case "paper":
+            case _:
                 print("Paper covers rock! You lose.")
 
     case "paper":
         match computer_action:
             case "rock":
                 print("Paper covers rock! You win!")
-            case "scissors":
+            case _:
                 print("Scissors cuts paper! You lose.")
 
     case "scissors":
         match computer_action:
             case "paper":
                 print("Scissors cuts paper! You win!")
-            case "rock":
+            case _:
                 print("Rock smashes scissors! You lose.")
 
     case _:
         print("Invalid input! Please enter rock, paper, or scissors.")
+
+
+input("\nPress Enter to exit...")
